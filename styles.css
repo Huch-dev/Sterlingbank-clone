@@ -1,0 +1,59 @@
+.sec-three {
+  padding: 4rem;
+  background-color: #a31920;
+}
+
+.banking-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banking-options-content {
+  color: #fff;
+}
+
+.banking-options-content h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+
+.banking-options-content p {
+  font-size: 400;
+  margin-top: 1rem 0;
+}
+
+.banking-options-content button {
+  width: 50%;
+  border: none;
+  padding: .6rem 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #d92028;
+  border-radius: 12px;
+}
+
+.option-box {
+  width: 30%;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.box {
+  background-color: #fff;
+  height: 35vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.box > h5 {
+text-transform: capitalize;
+}
