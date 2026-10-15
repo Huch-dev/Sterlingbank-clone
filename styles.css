@@ -1,5 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Albert Sans', sans-serif;
+}
+
+nav {
+  background-color: #fff;
+}
+
+.innerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+}
+
+.innerNav > img {
+  width: 130px;
+}
+
+.genLayout {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.navItems {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.navItems > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #c36;
+}
+
+.search {
+  border-bottom: 2px solid #c36;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 20px;
+}
+
+.search:hover {
+  padding: 0 5px;
+  width: 20%;
+  border-block: 2px solid #c36;
+  border-radius: 10px;
+}
+
+.search > input {
+  border: none;
+  outline: none;
+  padding: 0.3rem 1rem;
+  width: 100%;
+}
+
+/* style for hero section */
+.sec-one {
+  background-image: url(https://sterling.ng/wp-content/uploads/2026/02/shutterstock_522456049.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-block: 5rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.hero-content {
+  width: 60%;
+}
+
+.hero-content > h5 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.4rem;
+  color: #d92028;
+}
+
+.hero-content > h1 {
+  font-size: 80px;
+  font-weight: 900;
+  color: #636363;
+}
+
+.hero-content > p {
+  color: #7a7a7a;
+  font-size: 16px;
+  margin-bottom: 14.4px;
+  width: 550px;
+}
+
+.hero-content > p > span {
+  font-weight: 800;
+}
+
+.btn {
+  background-color: #d92028;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  border-radius: 50px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.hero > img {
+  width: 400px;
+  height: 70vh;
+}
+
+/* <!-- section two --> */
+
+.sec-two {
+  background-image: url(https://sterling.ng/wp-content/uploads/2026/02/clipboard-image-1770036547.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-block: 5rem;
+}
+
+.hero-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-two-content {
+  width: 60%;
+}
+
+.hero-two-content > h2 {
+  font-size: 80px;
+  font-weight: 900;
+  font: 64px;
+  line-height: 1.1em;
+  margin: 0px 0px 14.4px;
+  color: #636363;
+}
+
+.hero-two-content > p {
+  color: #7a7a7a;
+  font: 16px;
+  margin-bottom: 14.4px;
+  width: 550px;
+}
+
+.btn {
+  background-color: #d92028;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  border-radius: 50px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  /* margin: 0px 0px 14.4px; */
+  margin-top: 10px;
+}
+
+.hero-two > img {
+  width: 400px;
+  height: 70vh;
+  margin-right: 80px;
+}
+
+/* <!-- section three --> */
+
 .sec-three {
-  padding: 4rem;
+  padding: 1rem;
   background-color: #a31920;
 }
 
@@ -13,31 +196,32 @@
   color: #fff;
 }
 
-.banking-options-content h2 {
+.banking-options-content > h2 {
   font-size: 1.6rem;
   font-weight: 500;
 }
 
 
-.banking-options-content p {
+.banking-options-content > p {
   font-size: 400;
   margin-top: 1rem 0;
 }
 
-.banking-options-content button {
+.banking-options-content > button {
   width: 50%;
   border: none;
   padding: .6rem 1rem;
   text-transform: uppercase;
   color: #fff;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   background-color: #d92028;
   border-radius: 12px;
+  margin-top: 7px;
 }
 
 .option-box {
-  width: 30%;
+  width: 40%;
   display: grid;
   gap: 15px;
   grid-template-columns: repeat(2, 1fr);
@@ -55,5 +239,61 @@
 }
 
 .box > h5 {
-text-transform: capitalize;
+  text-transform: capitalize;
+}
+
+/* styling for sec four */
+
+.sec-four{
+  background-image: url(https://sterling.ng/wp-content/uploads/2026/02/clipboard-image-1770036530.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-block: 5rem;
+}
+
+.grid-options {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-card-option {
+  border-radius: 3rem 2rem;
+  /* height: 40vh; */
+  box-shadow: .1rem .1rem 15px grey;
+}
+
+.grid-card-option:nth-child(even) {
+  border-radius: 2rem 3rem;
+}
+
+.grid-card-option > img {
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 3rem;
+}
+
+.card-content {
+  padding: .6rem 2rem;
+}
+
+.card-content > h1 {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.card-content > p {
+  font-size: 16px;
+  margin-block: .5rem;
+}
+
+.card-content > a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #a31920;
+  font-weight: 800;
+  font-size: 13px;
 }
